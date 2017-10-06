@@ -9,8 +9,6 @@ image_resource:
 inputs:
 - name: concourse
 - name: linux-binary
-- name: darwin-binary
-- name: windows-binary
 - name: version
 
 outputs:
