@@ -17,6 +17,9 @@ for platform in linux ; do
   cp ${platform}-binary/* release/artifacts
 done
 
+VERSION=$(cat release/name)
+cp release/artifacts/fly_linux_amd64 release/artifacts/fly_linux_amd64_$VERSION
+
 echo 'start'
 ls -al release
 cat release/name
