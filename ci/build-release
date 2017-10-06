@@ -16,3 +16,10 @@ mkdir release/artifacts
 for platform in linux ; do
   cp ${platform}-binary/* release/artifacts
 done
+
+echo 'start'
+ls -al release
+cat release/name
+echo 'done'
+ls release/artifacts
+echo 'done'
