@@ -18,11 +18,4 @@ for platform in linux ; do
 done
 
 VERSION=$(cat release/name)
-mv release/artifacts/fly_linux_amd64 release/artifacts/fly_linux_amd64_$VERSION
-
-echo 'start'
-ls -al release
-cat release/name
-echo 'done'
-ls release/artifacts
-echo 'done'
+cp release/artifacts/fly_linux_amd64 release/artifacts/fly_linux_amd64_$VERSION
